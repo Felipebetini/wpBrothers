@@ -18,7 +18,8 @@ I attempted to implement them directly in WordPress but couldn't find any stylin
 
 Everything (almost) worked out. A quick Google search helped me figure out how to use the WordPress-generated "Blog" page in the navbar:
 
-```wp_nav_menu([
+```
+wp_nav_menu([
   'theme_location' => 'primary_menu',
   'container' => false,
   'menu_class' => 'flex space-x-6',
