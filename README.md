@@ -1,5 +1,3 @@
-# wpBrothers
- 
 # Hello!
 
 This is a brief summary of my journey through this assessment—it was quite an adventure! With only basic knowledge of WordPress, I took an approach where I built the application while learning how things worked along the way. I often thought, "Okay, I need this element to do that," and tried to implement it as I would in a framework, adapting the process to WordPress. This might not have been the best strategy, as I could have done things incorrectly or in ways that aren't considered best practice. However, I prefer learning through trial and error rather than leaving things unfinished. In the end, everything (almost) worked out. I encountered some issues and errors, but with some research, I was able to find solutions relatively easily.
@@ -208,4 +206,4 @@ I also created a basic layout for the search page (essentially a copy of the blo
 
 This project was both challenging and rewarding. Although I feel I only scratched the surface of what WordPress can do, the experience was invaluable. I’m satisfied with the layout and overall result, even if some functionalities still need refinement. I look forward to diving deeper into WordPress in future projects.
 
-Felipe Betini Ribeiro
+## Felipe Betini Ribeiro
