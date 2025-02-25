@@ -1,0 +1,34 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* Ensure smooth transition for mobile menu */
+#mobile-menu {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Dropdown items transition */
+#dropdown-items {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.sub-menu {
+  display: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+li:hover > .sub-menu {
+  display: block;
+  position: absolute;
+  width: 10rem;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+
+  z-index: 1000;
+}
+
+.sub-menu > a {
+  padding-left: 1rem /* 16px */;
+  padding-right: 1rem /* 16px */;
+  padding-top: 0.5rem /* 8px */;
+  padding-bottom: 0.5rem /* 8px */;
+}

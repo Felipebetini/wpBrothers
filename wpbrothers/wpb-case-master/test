@@ -1,0 +1,137 @@
+<?php defined('ABSPATH') || exit('Forbidden');
+
+get_header();
+
+while (have_posts()) {
+    the_post();
+    ?>
+
+    <div class="container mx-auto px-4 mt-14 md:mt-28">
+        <article class="max-w-7xl mx-auto">
+
+            <header class="flex flex-col md:flex-row gap-8 md:gap-10">
+
+                <div class="w-full md:w-1/2">
+                    <h1 class="text-3xl md:text-4xl lg:text-5xl font-extrabold text-font-head leading-tight">
+                        <?php the_title(); ?>
+                    </h1>
+                    <p class="text-font-body text-base md:text-lg mt-4">
+                        Bij WP Brothers is geen enkele dag hetzelfde, en dat maakt werken hier zo ontzettend leuk.
+                        Vandaag neem ik je mee in een typische werkdag van mij, Bas, een van de WordPress developers bij
+                        WP Brothers.
+                    </p>
+                </div>
+                <div class="w-full md:w-1/2">
+                    <img class="w-full h-auto rounded-sm"
+                        src="http://wpb-case.local/wp-content/uploads/2025/02/Image-1-300x226.png"
+                        alt="Bas met roze badmuts" />
+                </div>
+            </header>
+
+            <section class="mt-20 md:mt-40 flex flex-col md:flex-row gap-8">
+
+                <div class="w-full md:w-2/3">
+                    <h2 class="text-xl md:text-2xl font-semibold text-font-body mb-5">Inhoudsopgave</h2>
+                    <div class="space-y-2">
+                        <a class="flex items-center hover:underline" href="#start">
+                            <img class="w-6 h-6 mr-2" src="<?= get_template_directory_uri(); ?>/assets/images/anchor.svg"
+                                alt="Anchor" />
+                            <p class="text-font-body text-base">De start</p>
+                        </a>
+                        <a class="flex items-center hover:underline" href="#einde-middag">
+                            <img class="w-6 h-6 mr-2" src="<?= get_template_directory_uri(); ?>/assets/images/anchor.svg"
+                                alt="Anchor" />
+                            <p class="text-font-body text-base">Einde middag</p>
+                        </a>
+                    </div>
+                    <p class="text-font-body text-base mt-5">
+                        De dag begint met een kop koffie en een stand-up meeting met het hele team. We bespreken de
+                        projecten waar we aan werken en de uitdagingen die we tegenkomen. Vandaag werk ik aan een custom
+                        plugin voor een grote klant. De eisen zijn uitdagend, maar dat maakt het juist zo interessant.
+                    </p>
+                </div>
+
+                <div class="w-full md:w-1/3 flex flex-col items-center md:items-start space-y-4">
+                    <p class="text-lg font-semibold text-font-head">DEEL</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="hover:text-gray-400">
+                            <i class="fab fa-facebook text-primary text-2xl"></i>
+                        </a>
+                        <a href="#" class="hover:text-gray-400">
+                            <i class="fab fa-instagram text-primary text-2xl"></i>
+                        </a>
+                        <a href="#" class="hover:text-gray-400">
+                            <i class="fa-brands fa-whatsapp text-primary text-2xl"></i>
+                        </a>
+                        <a href="#" class="hover:text-gray-400">
+                            <i class="fa-regular fa-envelope text-primary text-2xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+
+            <section id="start" class="mt-10">
+                <h2 class="text-2xl md:text-3xl font-extrabold text-font-body">De start</h2>
+                <p class="text-gray-700 mt-4 text-base md:text-lg text-font-body">
+                    Na de meeting duik ik meteen in de code. Het is geweldig om te zien hoe mijn ideeën vorm krijgen en de
+                    website van onze klant tot leven brengen.
+                    Soms loop ik tegen een probleem aan dat mijn hersens laten kraken, maar gelukkig staat mijn team altijd
+                    klaar om mee te denken.
+                    Samen vinden we altijd een oplossing.
+                </p>
+            </section>
+
+            <section id="einde-middag" class="mt-10">
+                <h2 class="text-2xl md:text-3xl font-extrabold text-font-body">Einde middag</h2>
+                <p class="text-base text-font-body mt-4">Voor gedefinieerd moet de website minimaal een structuur hebben
+                    bestaande uit:
+                </p>
+                <ul class="list-disc list-inside text-font-body text-base mt-2">
+                    <li>H1 t/m H6 + Subheading</li>
+                    <li>Intro tekst</li>
+                    <li>Brood tekst + Kleine tekst</li>
+                    <li>Knoppen</li>
+                    <li>Caption</li>
+                </ul>
+                <ol class="list-decimal list-inside text-font-body text-base mt-2">
+                    <li>H1 t/m H6 + Subheading</li>
+                    <li>Intro tekst</li>
+                    <li>Brood tekst + Kleine tekst</li>
+                    <li>Knoppen</li>
+                    <li>Caption</li>
+                </ol>
+                <button
+                    class="mt-4 px-4 py-2 bg-primary text-white font-semibold rounded-full transition-all hover:bg-primary-dark">
+                    Button
+                </button>
+            </section>
+
+
+            <div class="mt-10 p-4 bg-brand2-50 border-l-4 border-brand2-500 flex flex-col md:flex-row">
+                <div class="mr-5">
+                    <img class="w-10 h-10" src="<?= get_template_directory_uri(); ?>/assets/images/info.svg" alt="info" />
+                </div>
+                <div class="pt-2">
+                    <h3 class="text-xl font-semibold text-font-body">Info</h3>
+                    <p class="text-base text-font-body mt-2">Werken bij WP Brothers betekent constant leren en groeien.
+                        De dynamische omgeving en het supportieve team zorgen ervoor dat ik elke dag met plezier naar mijn
+                        werk ga.
+                        Als jij ook houdt van uitdagingen en graag deel uitmaakt van een innovatief team, dan is WP Brothers
+                        de perfecte plek voor jou!
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="mt-10">
+                <img class="w-full h-auto" src="<?= get_template_directory_uri(); ?>/assets/images/DogBig.png"
+                    alt="Bas met roze badmuts" />
+            </div>
+        </article>
+    </div>
+
+    <?php
+}
+
+get_footer();
